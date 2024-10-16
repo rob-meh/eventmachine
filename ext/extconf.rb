@@ -199,6 +199,8 @@ when /openbsd/
 
 when /darwin/
   add_define 'OS_DARWIN'
+  CONFIG['CC'] = "gcc"
+  CONFIG['CXX'] = "g++"
 
   # on Unix we need a g++ link, not gcc.
   # Ff line contributed by Daniel Harple.

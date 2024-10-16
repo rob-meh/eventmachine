@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.7.1 (October 16, 2024)
+* Force CXX and CC flags on makefile
+
 ## 1.2.7 (May 12, 2018)
 * Fix segfault on large numbers of connections [#843]
 
