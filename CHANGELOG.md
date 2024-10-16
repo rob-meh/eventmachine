@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.9.2 (Oct 16, 2024)
+* Force CXX and C flags to g++ and gcc in Makefile
+
 ## 1.0.9.1 (January 14, 2016)
 * Fix EPROTO not defined on Windows [#676]
 * Fix missing cast to struct sockaddr * [#671]
