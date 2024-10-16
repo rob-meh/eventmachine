@@ -190,11 +190,12 @@ when /openbsd/
 
 when /darwin/
   add_define 'OS_DARWIN'
+  CONFIG['CC'] = "gcc"
+  CONFIG['CXX'] = "g++"
 
   # on Unix we need a g++ link, not gcc.
   # Ff line contributed by Daniel Harple.
   CONFIG['LDSHARED'] = "$(CXX) " + CONFIG['LDSHARED'].split[1..-1].join(' ')
-
 when /linux/
   add_define 'HAVE_EPOLL' if have_func('epoll_create', 'sys/epoll.h')
 
